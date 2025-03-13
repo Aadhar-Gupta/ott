@@ -16,8 +16,8 @@ function HomeTop() {
   const words = ["business", "content", "audience", "leades"];
   return (
     <>
-      <div className="bg-black pr-[100px] pl-[100px] flex">
-        <div className="flex items-center">
+      <div className="bg-black pr-[100px] pl-[100px] flex flex-col lg:flex-row">
+        <div className="flex items-center ">
           <Card className="w-1/2  max-h-60">
             <CardHeader>
               <CardDescription>WELCOME TO OTT</CardDescription>

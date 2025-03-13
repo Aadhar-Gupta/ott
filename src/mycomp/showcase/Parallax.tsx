@@ -62,7 +62,7 @@ export default function ParallaxShowcase() {
 
   return (
     <div className="snap-y snap-mandatory">
-      {[1, 2, 3].map((id) => (
+      {[0, 1, 2].map((id) => (
         <ShowcaseImage key={id} id={id} />
       ))}
       <motion.div

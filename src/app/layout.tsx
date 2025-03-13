@@ -1,6 +1,9 @@
 import "./globals.css";
 import Header from "@/mycomp/Header";
 import Footer from "@/mycomp/Footer";
+import { PrimeReactProvider } from "primereact/api";
+
+import "primereact/resources/themes/lara-dark-cyan/theme.css";
 
 export default function RootLayout({
   children,
@@ -10,9 +13,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header></Header>
-        {children}
-        <Footer></Footer>
+        <PrimeReactProvider>
+          <Header></Header>
+          {children}
+          <Footer></Footer>
+        </PrimeReactProvider>
       </body>
     </html>
   );
